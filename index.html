@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LodgePoint - Hotel Reservations</title>
+    <!--Google Fonts-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Awesome Fonts-->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylsheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">LodgePoint</a>
+            <div class="nav-right">
+                <select name="currency-select" >
+                    <option value="MAD">MAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <a href="#" class="nav-link"><i class="far fa-heart"></i>Favorites</a>
+                <a href="pages/singin.html" class="nav-link">Sign in</a>
+                <a href="pages/signup.html" class="btn-register">Sign up</a>
+            </div>
+        </div>
+    </nav>
+    <!--Search Section-->
+    <section class="search">
+        <div class="container">
+            <h1>Where will you wake up next?</h1>
+            <p>Search deals on hotels, homes, and much more...</p>
+
+            <form class="search-form">
+                <div class="search-input location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Where is your next trip to?">
+                </div>
+                <div class="search-input dates">
+                    <div class="calendar-wrapper">
+                        <div class="date-inputs">
+                            <div class="check-in">
+                                <i class="fas fa-calendar"></i>
+                                <input type="text" placeholder="Check-in" readonly>
+
+                            </div>
+                            <div class="check-out">
+                                <i class="fas fa-calendar"></i>
+                                <input type="text" placeholder="Check-out" readonly>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="search-input">
+                    <i class="fas fa-user"></i>
+                    <div class="guest-selector">
+                        2 adults · 0 children
+                    </div>
+                </div>
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </form>
+
+        </div>
+    </section>
+    <!--Property types-->
+
+    <section class="property-types">
+        <div class="container">
+            <h2 class="section-title">Browse by property type</h2>
+            <div class="type-grid">
+                <div class="type-card">
+                    <img src="images/hotels.png" alt="Hotels">
+                    <div class="type-card-content">
+                        <h3>Hotels</h3> <!--maybe we could use this as an example-->
+                        <p>890,938 hotels</p>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="images/apt.png" alt="Apartments">
+                    <div class="type-card-content">
+                        <h3>Apartments</h3>
+                        <p>576,983 apartments</p>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="images/rsrt.png" alt="Resorts">
+                    <div class="type-card-content">
+                        <h3>Resorts</h3>
+                        <p>235,873 resorts</p>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="images/villas.png" alt="Villas">
+                    <div class="type-card-content">
+                        <h3>Villas</h3>
+                        <p>134,873 resorts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Popular destinations-->
+
+    <section class="popular-destinations">
+        <div class="container">
+            <h2 class="section-title">Popular destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="images/paris.jpg" alt="Paris">
+                    <div class="destination-info">
+                        <h3>Paris</h3>
+                        <p>4,568 properties</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/london.jpg" alt="London">
+                    <div class="destination-info">
+                        <h3>London</h3>
+                        <p>3,785 properties</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/newyork.jpg" alt="New York">
+                    <div class="destination-info">
+                        <h3>New York</h3>
+                        <p>2,956 properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 class="logo">LodgePoint</h3>
+                    <p>Discover the world, one stay at a time. Your perfect accommodation awaits.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cancellation Options</a></li>
+                        <li><a href="#">Safety Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for exclusive deals!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LodgePoint. All Rights Reserved</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
