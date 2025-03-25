@@ -2,7 +2,9 @@
 
 1- index.html: done;
 2- styles.css: done;
-3- sign-in & sign-up html pages: in progress; 
+3- sign-in & sign-up html pages: done as well as their css;
+
+### The rest: Loading...
 
 
 ## Learnings:
