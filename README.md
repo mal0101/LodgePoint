@@ -4,7 +4,7 @@
 2- styles.css: done;
 3- sign-in & sign-up html pages: done as well as their css;
 4- profile.html : done;
-5- profile.css :  in progress;
+5- profile.css :  done;
 
 
 ### The rest: Loading...
@@ -24,5 +24,5 @@
 
 The aside content should be indirectly related to the surrounding content.
 
-
+- The white-space property specifies how white-space inside an element is handled.
 
