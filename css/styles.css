@@ -461,6 +461,11 @@ p {
 .footer-section p {
     text-align: left;
 }
+
+.hotel-card {
+    text-decoration: none;
+    color: var(--accent-color)
+}
 @media (max-width: 1024px) {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
