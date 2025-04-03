@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LodgePoint Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/admin.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">LodgePoint Admin</a>
+            <div class="nav-right">
+                <a href="#" class="nav-link"><i class="fas fa-user"></i>Admin</a>
+                <a href="#" class="btn-register">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <div class="admin-sidebar">
+            <ul class="admin-menu">
+                <li class="active"><a href="#dashboard"><i class="fas fa-chart-line"></i>Dashboard</a></li>
+                <li><a href="#reservations"><i class="fas fa-calendar-check"></i>Reservations</a></li>
+                <li><a href="#hotels"><i class="fas fa-hotel"></i>Hotels</a></li>
+                <li><a href="#users"><i class="fas fa-users"></i>Users</a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i>Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="admin-content">
+            <div class="admin-header">
+                <h1>Dashboard</h1>
+                <div class="date-filter">
+                    <input type="date" id="startDate">
+                    <input type="date" id="endDate">
+                    <button class="filter-btn">Filter</button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Total Bookings</h3>
+                    <p class="stat-number">1,234</p>
+                    <span class="stat-change positive">+12.5%</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Revenue</h3>
+                    <p class="stat-number">$45,678</p>
+                    <span class="stat-change positive">+8.3%</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>New Users</h3>
+                    <p class="stat-number">256</p>
+                    <span class="stat-change positive">+5.7%</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Average Rating</h3>
+                    <p class="stat-number">4.8</p>
+                    <span class="stat-change positive">+0.2</span>
+                </div>
+            </div>
+
+            <div class="recent-bookings">
+                <h2>Recent Bookings</h2>
+                <table class="bookings-table">
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Guest Name</th>
+                            <th>Hotel</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookingsTableBody">
+                        <!-- Bookings will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

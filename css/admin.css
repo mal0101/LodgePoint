@@ -1,0 +1,235 @@
+.admin-container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+    background-color: var(--background);
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: var(--card-bg);
+    border-right: 1px solid rgba(200, 166, 85, 0.2);
+    padding: 20px 0;
+}
+
+.admin-menu {
+    list-style: none;
+}
+
+.admin-menu li {
+    padding: 12px 24px;
+    margin: 4px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-menu li:hover, 
+.admin-menu li.active {
+    background: var(--primary-color);
+    border-left: 4px solid var(--accent-color);
+}
+
+.admin-menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-menu li a i {
+    color: var(--accent-color);
+    width: 20px;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 24px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.admin-header h1 {
+    font-size: 28px;
+    margin: 0;
+    text-align: left;
+}
+
+.date-filter {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.date-filter input {
+    padding: 8px;
+    background: var(--card-bg);
+    border: 1px solid rgba(200, 166, 85, 0.2);
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+.filter-btn {
+    background: var(--gold-gradient);
+    color: var(--primary-color);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--gold-shadow);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(200, 166, 85, 0.2);
+    text-align: center;
+}
+
+.stat-card i {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.stat-card h3 {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 8px 0;
+}
+
+.stat-change {
+    font-size: 14px;
+    display: block;
+}
+
+.stat-change.positive {
+    color: #4CAF50;
+}
+
+.stat-change.negative {
+    color: #f44336;
+}
+
+.recent-bookings {
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(200, 166, 85, 0.2);
+}
+
+.recent-bookings h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bookings-table th,
+.bookings-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(200, 166, 85, 0.2);
+}
+
+.bookings-table th {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.bookings-table td {
+    color: var(--text-secondary);
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.status-confirmed {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+}
+
+.status-pending {
+    background: rgba(255, 152, 0, 0.2);
+    color: #FF9800;
+}
+
+.status-cancelled {
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(200, 166, 85, 0.2);
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bookings-table {
+        overflow-x: auto;
+        display: block;
+    }
+}
